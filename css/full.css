@@ -1,0 +1,318 @@
+/*
+ * Start Bootstrap - Full (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+
+@font-face {
+    font-family: 'maison_neuedemi';
+    src: url('../fonts/maisonneue-demi-webfont.woff2') format('woff2'),
+         url('../fonts/maisonneue-demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'maison_neuemono_italic';
+    src: url('../fonts/maisonneue-monoitalic-webfont.woff2') format('woff2'),
+         url('../fonts/maisonneue-monoitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'maison_neuemono';
+    src: url('../fonts/maisonneue-mono-webfont.woff2') format('woff2'),
+         url('../fonts/maisonneue-mono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html, body{
+  height: 100%;
+  margin: 0;
+}
+body{
+  width:100%;
+  background: url('../img/poster.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top center;
+  font-family: "maison_neuemono", helvetica, arial, sans-serif;
+  font-size: 10px;
+}
+
+.container{
+  padding: 0 45px;
+}
+.vcenter{
+  padding: 120px 0;
+}
+.wrapper {
+  min-height: 460px;
+  position: fixed;
+  overflow: hidden;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.scene {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.layer{
+  width:100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.layer1{
+  background-image: url('../img/layer1.png');
+}
+.layer2{
+  background-image: url('../img/layer2.png');
+  background-position: bottom right;
+}
+.layer3{
+  background-image: url('../img/layer3.png');
+}
+.layer4{
+  background-image: url('../img/layer4.png');
+  background-position: top right;
+}
+.layer5{
+  background-image: url('../img/layer5.png');
+  background-position: bottom left;
+}
+.js .animate-box {
+  opacity: 0;
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 2em;
+  line-height: 1.3333333;
+  border-radius: 0px;
+}
+.btn-sm{
+  padding: 10px 16px;
+  font-size: 1em;
+  line-height: 1.3333333;
+  border-radius: 0px;
+}
+
+.btn-default {
+    color: #fff;
+    border-width: 2px;
+    background-color: transparent;
+    border-color: #fff;
+    font-family: 'maison_neuemono_italic', helvetica, arial, sans-serif;
+}
+.btn-default.focus,.btn-default:focus {
+    color: #d9534f;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c
+}
+
+.btn-default:hover {
+    color: #d9534f;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-default.active,.btn-default:active {
+    color: #d9534f;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-default.active.focus,.btn-default.active:focus,.btn-default.active:hover,.btn-default:active.focus,.btn-default:active:focus,.btn-default:active:hover,.open>.dropdown-toggle.btn-default.focus,.open>.dropdown-toggle.btn-default:focus,.open>.dropdown-toggle.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad
+}
+
+
+.sixteen-nine {
+  position: relative;
+  background-color:#2f336b;
+}
+.sixteen-nine:before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+.sixteen-nine > .image {
+  background-image: url(../img/news.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+}
+.full {
+}
+
+#header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding: 30px;
+  z-index: 1030;
+}
+
+#nav a{
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.75em;
+}
+
+.logo img{
+  height: auto;
+  width: 100%;
+}
+
+.right{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 60%;
+  padding: 30px;
+  z-index: 1030;
+}
+.right img{
+  height: 100%;
+  width: auto;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+}
+.bottom p{
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.section{
+  height: 100%;
+  position: relative;
+}
+
+.section#home{
+  height: 100%;
+}
+.section#home .btn-lg{
+  margin-top: 30px;
+}
+/* ARTISTS */
+
+.section#artists a{
+  display: block;
+  height: 100%;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: "maison_neuemono", helvetica, arial, sans-serif;
+  line-height: 1.05;
+}
+.section#artists h2{
+  font-size: 2.750em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.section#artists h2 span{
+  font-style: italic;
+  display: block;
+  margin-bottom: 0px;
+}
+.section#artists h3{
+  color: #fff;
+  font-size: 1.286em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section#video .sixteen-nine{
+  background-color:#2f336b;
+}
+.section#video .cover{
+  opacity: 0.3;
+}
+
+/* NEWS */
+
+.section#news a{
+  font-family: "maison_neuemono", helvetica, arial, sans-serif;
+}
+.section#news h2{
+  font-size: 2.750em;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+.section#news h2 span{
+  font-style: italic;
+  display: block;
+}
+.section#news h3{
+  color: #fff;
+  font-size: 1.286em;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+.section#news p{
+  font-size: 1em;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.section#news .btn-default{
+  margin-top: 30px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+@media (min-width: 992px){
+  body{
+    font-size: 13px;
+  }
+  .container{
+    width: 970px;
+  }
+  .logo img{
+    width: auto;
+    height: 90px;
+  }
+  .vcenter{
+    position: relative;
+    top: calc(50% + 50px);
+    transform: translate(0, -50%);
+    padding: 0;
+  }
+  .wrapper{
+    display: block;
+  }
+}
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
